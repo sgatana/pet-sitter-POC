@@ -1,0 +1,61 @@
+.sitter-container {
+  padding: 24px;
+  min-height: 200px;
+  background-color: inherit;
+  border: 1px solid #c9c9c9;
+  margin-top: 20px;
+}
+.sitter-container-info {
+  display: flex;
+  justify-content: space-between;
+}
+.sitter-container:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.card {
+  /* height: 100%; */
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.user-card-info {
+  align-items: center;
+}
+
+.user-card-info,
+.user-card-details {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  flex-direction: column;
+}
+.user-card-details {
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .sitter-container-info {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+
+  .user-card-details {
+    width: 100%;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    height: auto;
+  }
+  .sitter-container:hover {
+    background-color: #ffffff;
+  }
+}

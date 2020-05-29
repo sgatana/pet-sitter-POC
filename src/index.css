@@ -1,13 +1,96 @@
-body {
+/* 
+  for commont styles
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #4e4e4e;
+}
+.main-content {
+  width: 80%;
+  margin: auto;
+  background-color: #ffffff;
+  height: calc(100vh - 65px);
+  padding: 20px;
+  position: relative;
+  /* box-sizing: border-box; */
+}
+
+.btn-container {
+  margin: 10px 0;
+}
+.btn-primary {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #51bad1;
+  font-size: 110%;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  height: 35px;
+  cursor: pointer;
+}
+.btn-primary:focus {
+  outline: none;
+}
+
+.btn-link {
+  color: #51bad1;
+  cursor: pointer;
+  width: auto;
+}
+
+.avatar {
+  background-color: #3978e4;
+  background-image: url('https://robohash.org/set_set2/bgset_bg2/6');
+  background-size: cover;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.home-container {
+  position: relative;
+  height: calc(100% - 205px);
+}
+.sitter-list {
+  overflow: auto;
+  height: 100%;
+}
+
+/* mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .main-content {
+    width: 100%;
+  }
+  .btn-container {
+    width: 100%;
+  }
+  .home-container {
+    position: relative;
+    height: calc(100% - 300px);
+  }
+  .avatar {
+    margin: 10px;
+  }
+  .btn-link {
+    margin: 5px;
+  }
 }

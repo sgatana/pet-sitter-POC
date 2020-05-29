@@ -1,0 +1,50 @@
+.header {
+  height: 65px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.header-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  height: 65px;
+  width: 65px;
+  margin-bottom: 2px;
+  background-size: cover;
+  background-color: inherit;
+  background-position: center;
+  background-image: url('../../assets/logo.png');
+}
+.user-account-info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.username {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    width: 100%;
+  }
+  .logo {
+    margin-left: 5px;
+    height: 45px;
+    width: 45px;
+  }
+  .username {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: 10px;
+  }
+}
